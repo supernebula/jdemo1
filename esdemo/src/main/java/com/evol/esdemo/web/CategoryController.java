@@ -24,6 +24,7 @@ public class CategoryController {
     private String listCategory(ModelMap map){
         List<Category> list = categoryService.getCategoryList();
         map.put("categoryList", list);
+        map.addAttribute("host", "http://www.baidu.com");
 /*        if(1 == 1)
             throw new RuntimeException("故意抛出的异常！！");*/
         return "thymeleaf/listcategory";
