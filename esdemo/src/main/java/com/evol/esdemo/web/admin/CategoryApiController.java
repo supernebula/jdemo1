@@ -1,4 +1,4 @@
-package com.evol.esdemo.web;
+package com.evol.esdemo.web.admin;
 
 import com.evol.esdemo.entity.Category;
 import com.evol.esdemo.service.CategoryService;
@@ -14,13 +14,13 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/adminApi")
+@RequestMapping("/admin/api/category")
 public class CategoryApiController {
 
     @Autowired
     private CategoryService categoryService;
 
-    @RequestMapping(value = "/listcategoryapi", method = RequestMethod.GET)
+    @RequestMapping(value = "/list", method = RequestMethod.GET)
     private Map<String, Object> listCategory(){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         List<Category> list = categoryService.getCategoryList();
@@ -30,7 +30,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/getcategorybyidapi", method = RequestMethod.GET)
+    @RequestMapping(value = "/getbyid", method = RequestMethod.GET)
     private Map<String, Object> getCategory(Integer categoryId){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         Category item = categoryService.getCategoryById(categoryId);
@@ -38,7 +38,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/addcategoryapi", method = RequestMethod.POST)
+    @RequestMapping(value = "/add", method = RequestMethod.POST)
     private Map<String, Object> addCategory(Category category){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.addCategory(category);
@@ -46,7 +46,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/modifycategoryapi", method = RequestMethod.POST)
+    @RequestMapping(value = "/modify", method = RequestMethod.POST)
     private Map<String, Object> modifyCategory(@RequestBody Category category){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.modifyCategory(category);
@@ -54,7 +54,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/deletecategoryapi", method = RequestMethod.POST)
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
     private Map<String, Object> modifyCategory(Integer categoryId){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.deleteCategory(categoryId);
