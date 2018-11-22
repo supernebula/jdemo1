@@ -1,2 +1,4 @@
 # tech
-[Thymeleaf系列一 Spring boot 集成Thymeleaf](https://blog.csdn.net/hry2015/article/details/71374591)
+[Thymeleaf一 Spring boot integration](https://blog.csdn.net/hry2015/article/details/71374591)
+
+[thymeleaf base](https://www.cnblogs.com/vinphy/p/4674247.html)
