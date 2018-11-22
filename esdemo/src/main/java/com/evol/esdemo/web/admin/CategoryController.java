@@ -36,4 +36,38 @@ public class CategoryController {
         map.put("category", item);
         return "category/detail";
     }
+
+    @RequestMapping(value = "/create", method = RequestMethod.GET)
+    private String addCategory(){
+        return "category/create";
+    }
+
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
+    private String addCategory(Category category){
+        categoryService.addCategory(category);
+        return "category/create";
+    }
+
+
+    @RequestMapping(value = "/edit", method = RequestMethod.GET)
+    private String modifyCategory(ModelMap map, Integer categoryId){
+        Category item = categoryService.getCategoryById(categoryId);
+        map.put("category", item);
+        return "category/edit";
+    }
+
+    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    private String modifyCategory(Category category, Integer categoryId){
+        Category item = categoryService.getCategoryById(categoryId);
+        item.setCategoryName(category.getCategoryName());
+        item.setPriority(category.getPriority());
+        categoryService.modifyCategory(item);
+        return "category/edit";
+    }
+
+    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    private String deleteCategory(Integer categoryId){
+        categoryService.deleteCategory(categoryId);
+        return "category/list";
+    }
 }

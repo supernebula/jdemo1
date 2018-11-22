@@ -7,28 +7,36 @@
     <style>
 
     </style>
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.css}" />
 </head>
 <body>
-<div class="container-fluid" style="width: 80%;">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-12">.</div>
+        <div class="col-xs-3 col-sm-3 col-md-3">Category List</div>
+        <div class="col-xs-3 col-sm-3 col-md-3"><a th:href="@{create}">Create</a></div>
     </div>
 </div>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xs-1 col-md-1">id</div>
         <div class="col-xs-2 col-md-2">name</div>
-        <div class="col-xs-2 col-md-2">priority</div>
-        <div class="col-xs-3 col-md-3">create-time</div>
-        <div class="col-xs-4 col-md-4">last-edit-time</div>
+        <div class="col-xs-1 col-md-1">priority</div>
+        <div class="col-xs-2 col-md-2">create-time</div>
+        <div class="col-xs-2 col-md-2">last-edit-time</div>
+        <div class="col-xs-2 col-md-2">operate</div>
     </div>
+    <!--/*@thymesVar id="categoryList" type="java.util.HashMap<com.evol.esdemo.entity.Category>"*/-->
     <div class="row" th:each="category:${categoryList}">
         <div class="col-xs-1  col-md-1" th:text="${category.categoryId}">id</div>
         <div class="col-xs-2  col-md-2" th:text="${category.categoryName}">name</div>
-        <div class="col-xs-2  col-md-2" th:text="${category.priority}">priority</div>
-        <div class="col-xs-3 col-md-3" th:text="${category.createTime}">create-time</div>
-        <div class="col-xs-4 col-md-4"  th:text="${category.lastEditTime}">last-edit-time</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.priority}">priority</div>
+        <div class="col-xs-2 col-md-2" th:text="${category.createTime ne null ? #dates.format(category.createTime, 'yyyy-MM-dd') : ''}">create-time</div>
+        <div class="col-xs-2 col-md-2"  th:text="${category.lastEditTime ne null ? #dates.format(category.lastEditTime, 'yyyy-MM-dd') : ''}">last-edit-time</div>
+        <div class="col-xs-2 col-md-2">
+            <a th:href="@{edit(categoryId=${category.categoryId})}">Edit</a>
+            &nbsp;&nbsp;
+            <a th:href="@{delete(categoryId=${category.categoryId})}">Delete</a>
+        </div>
     </div>
 </div>
 <!-- 通过thymeleaf引入图片路径 -->

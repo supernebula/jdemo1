@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.css}" />
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">Category List</div>
+    </div>
+</div>
+<div class="container-fluid">
+    <form th:action="@{edit}" method="post">
+        <div class="row">
+            <div class="col-xs-3 col-md-3">name</div>
+            <div class="col-xs-9 col-md-9">
+                <!--/*@thymesVar id="category" type=""*/-->
+                <input th:field="*{categoryId}" type="hidden"  th:value="${category.categoryId}" />
+                <input th:field="*{categoryName}" placeholder="请输入名称" th:value="${category.categoryName}" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-md-3">priority</div>
+            <div class="col-xs-9 col-md-9">
+                <!--/*@thymesVar id="category" type=""*/-->
+                <input  th:field="priority" type="number" placeholder="请输入优先级数字"  th:value="${category.priority}"  />
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-3 col-md-3"></div>
+            <div class="col-xs-9 col-md-9">
+                <!--/*@thymesVar id="category" type=""*/-->
+                <input type="submit"  value="submit" />
+            </div>
+
+        </div>
+    </form>
+
+</div>
+
+
+</body>
+</html>

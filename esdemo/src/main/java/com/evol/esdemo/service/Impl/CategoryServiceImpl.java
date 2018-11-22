@@ -23,8 +23,8 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Override
     public Category getCategoryById(int categoryId) {
-        if(1 == 1)
-            throw new RuntimeException(this.getClass().getName() + ":故意抛出的异常！！");
+        /*if(1 == 1)
+            throw new RuntimeException(this.getClass().getName() + ":故意抛出的异常！！");*/
         return categoryDao.findCategoryById(categoryId);
     }
 
