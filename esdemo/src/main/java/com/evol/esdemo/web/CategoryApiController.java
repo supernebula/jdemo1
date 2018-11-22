@@ -20,7 +20,7 @@ public class CategoryApiController {
     @Autowired
     private CategoryService categoryService;
 
-    @RequestMapping(value = "/listcategory", method = RequestMethod.GET)
+    @RequestMapping(value = "/listcategoryapi", method = RequestMethod.GET)
     private Map<String, Object> listCategory(){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         List<Category> list = categoryService.getCategoryList();
@@ -30,7 +30,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/getcategorybyid", method = RequestMethod.GET)
+    @RequestMapping(value = "/getcategorybyidapi", method = RequestMethod.GET)
     private Map<String, Object> getCategory(Integer categoryId){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         Category item = categoryService.getCategoryById(categoryId);
@@ -38,7 +38,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/addcategory", method = RequestMethod.POST)
+    @RequestMapping(value = "/addcategoryapi", method = RequestMethod.POST)
     private Map<String, Object> addCategory(Category category){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.addCategory(category);
@@ -46,7 +46,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/modifycategory", method = RequestMethod.POST)
+    @RequestMapping(value = "/modifycategoryapi", method = RequestMethod.POST)
     private Map<String, Object> modifyCategory(@RequestBody Category category){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.modifyCategory(category);
@@ -54,7 +54,7 @@ public class CategoryApiController {
         return modelMap;
     }
 
-    @RequestMapping(value = "/deletecategory", method = RequestMethod.POST)
+    @RequestMapping(value = "/deletecategoryapi", method = RequestMethod.POST)
     private Map<String, Object> modifyCategory(Integer categoryId){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.deleteCategory(categoryId);
