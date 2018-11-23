@@ -4,7 +4,9 @@ import com.evol.esdemo.entity.Category;
 import com.evol.esdemo.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,6 +21,16 @@ public class CategoryController {
 
     @Autowired
     private CategoryService categoryService;
+
+    @GetMapping(value = "/index")
+    private String pagedCategory(ModelMap map){
+        List<Category> list = categoryService.getCategoryList();
+        map.put("categoryList", list);
+        map.addAttribute("host", "http://www.baidu.com");
+/*        if(1 == 1)
+            throw new RuntimeException("故意抛出的异常！！");*/
+        return "category/list";
+    }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     private String listCategory(ModelMap map){
@@ -38,21 +50,22 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.GET)
-    private String addCategory(){
+    private String addCategory(Model model){
+        model.addAttribute("category", new Category());
         return "category/create";
     }
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     private String addCategory(Category category){
         categoryService.addCategory(category);
-        return "category/create";
+        return "redirect:list";
     }
 
 
     @RequestMapping(value = "/edit", method = RequestMethod.GET)
-    private String modifyCategory(ModelMap map, Integer categoryId){
+    private String modifyCategory(Model model, Integer categoryId){
         Category item = categoryService.getCategoryById(categoryId);
-        map.put("category", item);
+        model.addAttribute("category", item);
         return "category/edit";
     }
 
@@ -62,12 +75,12 @@ public class CategoryController {
         item.setCategoryName(category.getCategoryName());
         item.setPriority(category.getPriority());
         categoryService.modifyCategory(item);
-        return "category/edit";
+        return "redirect:list";
     }
 
-    @RequestMapping(value = "/delete", method = RequestMethod.POST)
+    @GetMapping(value = "/delete")
     private String deleteCategory(Integer categoryId){
         categoryService.deleteCategory(categoryId);
-        return "category/list";
+        return "redirect:list";
     }
 }

@@ -4,10 +4,7 @@ import com.evol.esdemo.entity.Category;
 import com.evol.esdemo.service.CategoryService;
 import javafx.beans.property.adapter.ReadOnlyJavaBeanBooleanProperty;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -39,7 +36,7 @@ public class CategoryApiController {
     }
 
     @RequestMapping(value = "/add", method = RequestMethod.POST)
-    private Map<String, Object> addCategory(Category category){
+    private Map<String, Object> addCategory(@ModelAttribute("category") Category category){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.addCategory(category);
         modelMap.put("success", isSuccess);
@@ -47,7 +44,7 @@ public class CategoryApiController {
     }
 
     @RequestMapping(value = "/modify", method = RequestMethod.POST)
-    private Map<String, Object> modifyCategory(@RequestBody Category category){
+    private Map<String, Object> modifyCategory(@ModelAttribute("category") Category category){
         Map<String, Object> modelMap = new HashMap<String, Object>();
         boolean isSuccess = categoryService.modifyCategory(category);
         modelMap.put("success", isSuccess);
