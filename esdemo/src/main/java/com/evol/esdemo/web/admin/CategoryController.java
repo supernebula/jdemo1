@@ -1,7 +1,9 @@
 package com.evol.esdemo.web.admin;
 
 import com.evol.esdemo.entity.Category;
+import com.evol.esdemo.page.PageInfo;
 import com.evol.esdemo.service.CategoryService;
+import com.github.pagehelper.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,13 +25,18 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping(value = "/index")
-    private String pagedCategory(ModelMap map){
-        List<Category> list = categoryService.getCategoryList();
-        map.put("categoryList", list);
-        map.addAttribute("host", "http://www.baidu.com");
+    private String pagedCategory(ModelMap map, Integer page, Integer pageSize){
+        if(page == null || page < 1) page = 1;
+        if(pageSize == null || pageSize < 10) page = 10;
+
+        Page<Category> items = categoryService.queryByPage(page, pageSize);
+        // 需要把Page包装成PageInfo对象才能序列化。该插件也默认实现了一个PageInfo
+        PageInfo<Category> pageInfo = new PageInfo<>(items);
+        map.put("pageInfo", pageInfo);
 /*        if(1 == 1)
             throw new RuntimeException("故意抛出的异常！！");*/
-        return "category/list";
+        map.addAttribute("host", "http://www.baidu.com");
+        return "category/index";
     }
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)

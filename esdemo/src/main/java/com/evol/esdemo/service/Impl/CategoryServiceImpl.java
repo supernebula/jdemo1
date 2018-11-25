@@ -3,6 +3,8 @@ package com.evol.esdemo.service.Impl;
 import com.evol.esdemo.dao.CategoryDao;
 import com.evol.esdemo.entity.Category;
 import com.evol.esdemo.service.CategoryService;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -15,6 +17,12 @@ public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
     private CategoryDao categoryDao;
+
+    @Override
+    public Page<Category> queryByPage(int pageIndex, int pageSize) {
+        PageHelper.startPage(pageIndex, pageSize);
+        return categoryDao.queryByPage();
+    }
 
     @Override
     public List<Category> getCategoryList() {

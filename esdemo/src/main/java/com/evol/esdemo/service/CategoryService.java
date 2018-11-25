@@ -1,10 +1,19 @@
 package com.evol.esdemo.service;
 
 import com.evol.esdemo.entity.Category;
+import com.github.pagehelper.Page;
 
 import java.util.List;
 
 public interface CategoryService {
+
+    /**
+     *
+     * @param pageIndex 页号
+     * @param pageSize  每页记录数
+     * @return
+     */
+    Page<Category> queryByPage(int pageIndex, int pageSize);
 
     /**
      * 获取类别列表

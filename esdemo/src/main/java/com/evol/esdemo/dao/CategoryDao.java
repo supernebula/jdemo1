@@ -1,6 +1,7 @@
 package com.evol.esdemo.dao;
 
 import com.evol.esdemo.entity.Category;
+import com.github.pagehelper.Page;
 
 import java.util.List;
 
@@ -9,6 +10,8 @@ import java.util.List;
  *
  */
 public interface CategoryDao {
+
+    Page<Category> queryByPage();
 
     /**
      * 列出类别列表
