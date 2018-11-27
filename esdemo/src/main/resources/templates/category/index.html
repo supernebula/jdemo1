@@ -41,7 +41,8 @@
         </div>
     </div>
     <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->
-    <div class="row" style="background-color: #9acfea;">
+    <div class="row" style="background-color:#F5F5F5;">
+        <div class="col-xs-1  col-md-1">页码：</div>
         <div class="col-xs-1  col-md-1" th:each="pageNo : ${#numbers.sequence(1, pageInfo.pages)}">
 
             <a th:href="@{index(page=${pageNo},pageSize=10)}" th:text="${pageNo}" th:style="${pageNo eq currentPage ? '' : 'text-decoration:underline;'}"></a>
