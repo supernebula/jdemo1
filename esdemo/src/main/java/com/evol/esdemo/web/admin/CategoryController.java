@@ -27,7 +27,7 @@ public class CategoryController {
     @GetMapping(value = "/index")
     private String pagedCategory(ModelMap map, Integer page, Integer pageSize){
         if(page == null || page < 1) page = 1;
-        if(pageSize == null || pageSize < 10) page = 10;
+        if(pageSize == null || pageSize < 10) pageSize = 10;
 
         Page<Category> items = categoryService.queryByPage(page, pageSize);
         // 需要把Page包装成PageInfo对象才能序列化。该插件也默认实现了一个PageInfo
@@ -36,6 +36,7 @@ public class CategoryController {
 /*        if(1 == 1)
             throw new RuntimeException("故意抛出的异常！！");*/
         map.addAttribute("host", "http://www.baidu.com");
+        map.put("currentPage", page);
         return "category/index";
     }
 
@@ -65,7 +66,7 @@ public class CategoryController {
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     private String addCategory(Category category){
         categoryService.addCategory(category);
-        return "redirect:list";
+        return "redirect:index";
     }
 
 
@@ -82,12 +83,12 @@ public class CategoryController {
         item.setCategoryName(category.getCategoryName());
         item.setPriority(category.getPriority());
         categoryService.modifyCategory(item);
-        return "redirect:list";
+        return "redirect:index";
     }
 
     @GetMapping(value = "/delete")
     private String deleteCategory(Integer categoryId){
         categoryService.deleteCategory(categoryId);
-        return "redirect:list";
+        return "redirect:index";
     }
 }

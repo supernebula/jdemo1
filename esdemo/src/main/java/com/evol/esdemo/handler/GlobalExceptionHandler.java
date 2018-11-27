@@ -18,6 +18,8 @@ public class GlobalExceptionHandler {
         Map<String, Object> modelMap = new HashMap<>();
         modelMap.put("success", false);
         modelMap.put("errMsg", e.getMessage());
+        modelMap.put("stackTrace", e.getStackTrace());
+        modelMap.put("ex", e.toString());
         return modelMap;
     }
 }

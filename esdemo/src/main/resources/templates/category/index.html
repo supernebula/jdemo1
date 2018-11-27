@@ -18,17 +18,19 @@
 </div>
 <div class="container-fluid">
     <div class="row">
+        <div class="col-xs-1 col-md-1">no</div>
         <div class="col-xs-1 col-md-1">id</div>
-        <div class="col-xs-2 col-md-2">name</div>
+        <div class="col-xs-1 col-md-1">name</div>
         <div class="col-xs-1 col-md-1">priority</div>
         <div class="col-xs-2 col-md-2">create-time</div>
         <div class="col-xs-2 col-md-2">last-edit-time</div>
         <div class="col-xs-2 col-md-2">operate</div>
     </div>
     <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->
-    <div class="row" th:each="category:${pageInfo.list}">
+    <div class="row" th:each="category,stat:${pageInfo.list}">
+        <div class="col-xs-1  col-md-1" th:text="${stat.index + 1}">id</div>
         <div class="col-xs-1  col-md-1" th:text="${category.categoryId}">id</div>
-        <div class="col-xs-2  col-md-2" th:text="${category.categoryName}">name</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.categoryName}">name</div>
         <div class="col-xs-1  col-md-1" th:text="${category.priority}">priority</div>
         <div class="col-xs-2 col-md-2" th:text="${category.createTime ne null ? #dates.format(category.createTime, 'yyyy-MM-dd') : ''}">create-time</div>
         <div class="col-xs-2 col-md-2"  th:text="${category.lastEditTime ne null ? #dates.format(category.lastEditTime, 'yyyy-MM-dd') : ''}">last-edit-time</div>
@@ -39,9 +41,10 @@
         </div>
     </div>
     <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->
-    <div class="row">
-        <div class="col-xs-12  col-md-12" th:each="pageNo : ${#numbers.sequence(1, pageInfo.pages)}">
-            <a th:href="@{index(page=${pageNo},pageSize=10)}" th:text="${pageNo}"></a>
+    <div class="row" style="background-color: #9acfea;">
+        <div class="col-xs-1  col-md-1" th:each="pageNo : ${#numbers.sequence(1, pageInfo.pages)}">
+
+            <a th:href="@{index(page=${pageNo},pageSize=10)}" th:text="${pageNo}" th:style="${pageNo eq currentPage ? '' : 'text-decoration:underline;'}"></a>
         </div>
     </div>
 </div>
