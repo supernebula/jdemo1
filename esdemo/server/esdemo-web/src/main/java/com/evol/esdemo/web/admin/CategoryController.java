@@ -9,13 +9,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 @RequestMapping("admin/category")
@@ -80,7 +77,7 @@ public class CategoryController {
     @RequestMapping(value = "/edit", method = RequestMethod.POST)
     private String modifyCategory(Category category, Integer categoryId){
         Category item = categoryService.getCategoryById(categoryId);
-        item.setCategoryName(category.getCategoryName());
+        item.setName(category.getName());
         item.setPriority(category.getPriority());
         categoryService.modifyCategory(item);
         return "redirect:index";

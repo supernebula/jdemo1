@@ -23,10 +23,10 @@ public interface CategoryService {
 
     /**
      * 通过类别Id获取类别信息
-     * @param categoryId
+     * @param id
      * @return
      */
-    Category getCategoryById(int categoryId);
+    Category getCategoryById(int id);
 
     /**
      * 增加类别信息
@@ -44,10 +44,10 @@ public interface CategoryService {
 
     /**
      * 根据Id删除类别
-     * @param category
+     * @param id
      * @return
      */
-    boolean deleteCategory(int category);
+    boolean deleteCategory(int id);
 
 
 

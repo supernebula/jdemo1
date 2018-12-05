@@ -2,7 +2,6 @@ package com.evol.esdemo.dao;
 
 import com.evol.esdemo.entity.Category;
 import org.junit.FixMethodOrder;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.MethodSorters;
@@ -10,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.awt.geom.Area;
 import java.util.Date;
 import java.util.List;
 
@@ -37,13 +35,13 @@ public class CategoryDaoTest {
     @Test
     public void findCategoryById() {
         Category category = categoryDao.findCategoryById(1);
-        assertEquals("数码", category.categoryName);
+        assertEquals("数码", category.name);
     }
 
     @Test
     public void insertCategory() {
         Category category = new Category();
-        category.setCategoryName("饰品");
+        category.setName("饰品");
         category.setPriority(1);
         int effectedNum = categoryDao.insertCategory(category);
         assertEquals(1, effectedNum);
@@ -52,8 +50,8 @@ public class CategoryDaoTest {
     @Test
     public void updateCategory() {
         Category category = new Category();
-        category.setCategoryName("图书");
-        category.setCategoryId(3);
+        category.setName("图书");
+        category.setId(3);
         category.setLastEditTime(new Date());
         int effectedNum = categoryDao.updateCategory(category);
         assertEquals(1, effectedNum);

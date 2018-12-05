@@ -5,10 +5,10 @@ import java.util.Date;
 //类别
 public class Category {
     //编号
-    public Integer categoryId;
+    public Integer id;
 
     //类别名称
-    public String categoryName;
+    public String name;
 
     //优先级
     public Integer priority;
@@ -19,20 +19,20 @@ public class Category {
     //最后编辑时间
     public Date lastEditTime;
 
-    public Integer getCategoryId() {
-        return categoryId;
+    public Integer getId() {
+        return id;
     }
 
-    public void setCategoryId(Integer categoryId) {
-        this.categoryId = categoryId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getCategoryName() {
-        return categoryName;
+    public String getName() {
+        return name;
     }
 
-    public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getPriority() {

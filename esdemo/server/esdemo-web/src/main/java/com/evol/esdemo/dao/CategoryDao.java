@@ -42,9 +42,9 @@ public interface CategoryDao {
 
     /**
      * 根据Id删除具体类别
-     * @param categoryId
+     * @param id
      * @return
      */
-    int deleteCategory(int categoryId);
+    int deleteCategory(int id);
 
 }

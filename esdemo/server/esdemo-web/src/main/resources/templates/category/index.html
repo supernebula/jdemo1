@@ -29,15 +29,15 @@
     <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->
     <div class="row" th:each="category,stat:${pageInfo.list}">
         <div class="col-xs-1  col-md-1" th:text="${stat.index + 1}">id</div>
-        <div class="col-xs-1  col-md-1" th:text="${category.categoryId}">id</div>
-        <div class="col-xs-1  col-md-1" th:text="${category.categoryName}">name</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.id}">id</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.name}">name</div>
         <div class="col-xs-1  col-md-1" th:text="${category.priority}">priority</div>
         <div class="col-xs-2 col-md-2" th:text="${category.createTime ne null ? #dates.format(category.createTime, 'yyyy-MM-dd') : ''}">create-time</div>
         <div class="col-xs-2 col-md-2"  th:text="${category.lastEditTime ne null ? #dates.format(category.lastEditTime, 'yyyy-MM-dd') : ''}">last-edit-time</div>
         <div class="col-xs-2 col-md-2">
-            <a th:href="@{edit(categoryId=${category.categoryId})}">Edit</a>
+            <a th:href="@{edit(categoryId=${category.id})}">Edit</a>
             &nbsp;&nbsp;
-            <a th:href="@{delete(categoryId=${category.categoryId})}">Delete</a>
+            <a th:href="@{delete(categoryId=${category.id})}">Delete</a>
         </div>
     </div>
     <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->

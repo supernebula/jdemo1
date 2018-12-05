@@ -1,6 +1,5 @@
 package com.evol.esdemo.service.Impl;
 
-import com.evol.esdemo.dao.CategoryDao;
 import com.evol.esdemo.entity.Category;
 import com.evol.esdemo.service.CategoryService;
 import org.junit.Assert;
@@ -12,11 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.validation.constraints.AssertTrue;
 import java.util.Date;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 
 @RunWith(SpringRunner.class)
@@ -42,7 +38,7 @@ public class CategoryServiceImplTest {
     @Test
     public void addCategory() {
         Category item = new Category();
-        item.setCategoryName("办公用品");
+        item.setName("办公用品");
         item.setPriority(4);
         item.setCreateTime(new Date());
         boolean isSuccess = categoryService.addCategory(item);
@@ -52,8 +48,8 @@ public class CategoryServiceImplTest {
     @Test
     public void modifyCategory() {
         Category item = new Category();
-        item.setCategoryId(7);
-        item.setCategoryName("办公用品2");
+        item.setId(7);
+        item.setName("办公用品2");
         item.setPriority(4);
         item.setLastEditTime(new Date());
         boolean isSuccess = categoryService.modifyCategory(item);

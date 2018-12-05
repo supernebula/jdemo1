@@ -44,8 +44,8 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public boolean addCategory(Category category) {
         if(category == null
-                || category.getCategoryName() == null
-                || "" == category.getCategoryName().trim()){
+                || category.getName() == null
+                || "" == category.getName().trim()){
             throw new RuntimeException("类别信息不能为空！");
         }
         category.setCreateTime(new Date());
@@ -64,8 +64,8 @@ public class CategoryServiceImpl implements CategoryService {
     @Transactional
     public boolean modifyCategory(Category category) {
         if(category == null
-                || category.getCategoryName() == null
-                || "" == category.getCategoryName().trim()){
+                || category.getName() == null
+                || "" == category.getName().trim()){
             throw new RuntimeException("类别信息不能为空！");
         }
         category.setLastEditTime(new Date());
