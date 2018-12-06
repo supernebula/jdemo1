@@ -1,5 +1,6 @@
 package com.evol.esdemo.dao;
 
+import com.evol.esdemo.dao.mapper.CategoryMapper;
 import com.evol.esdemo.entity.Category;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
@@ -17,25 +18,25 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @FixMethodOrder(MethodSorters.NAME_ASCENDING) // 按方法名大小升序执行
-public class CategoryDaoTest {
+public class CategoryMapperTest {
 
     /**
      * 参考： Project Structure > Project Settings > Facets > Spring > Spring(esdemo)
      * idea设置：Preferences > Editor > Inspections > Spring > Spring Core > Code > Autowiring for Bean Class > Severity:Warning
      */
     @Autowired
-    private CategoryDao categoryDao;
+    private CategoryMapper categoryMapper;
 
     @Test
     public void queryCategory() {
-        List<Category> categoryList = categoryDao.queryCategory();
+        List<Category> categoryList = categoryMapper.queryCategory();
         assertEquals(4, categoryList.size());
     }
 
     @Test
     public void findCategoryById() {
-        Category category = categoryDao.findCategoryById(1);
-        assertEquals("数码", category.name);
+        Category category = categoryMapper.findCategoryById(1);
+        assertEquals("数码", category.getName());
     }
 
     @Test
@@ -43,7 +44,7 @@ public class CategoryDaoTest {
         Category category = new Category();
         category.setName("饰品");
         category.setPriority(1);
-        int effectedNum = categoryDao.insertCategory(category);
+        int effectedNum = categoryMapper.insertCategory(category);
         assertEquals(1, effectedNum);
     }
 
@@ -53,13 +54,13 @@ public class CategoryDaoTest {
         category.setName("图书");
         category.setId(3);
         category.setLastEditTime(new Date());
-        int effectedNum = categoryDao.updateCategory(category);
+        int effectedNum = categoryMapper.updateCategory(category);
         assertEquals(1, effectedNum);
     }
 
     @Test
     public void deleteCategory() {
-        int effectedNum = categoryDao.deleteCategory(3);
+        int effectedNum = categoryMapper.deleteCategory(3);
         assertEquals(1, effectedNum);
     }
 }

@@ -1,6 +1,6 @@
 package com.evol.esdemo.service.Impl;
 
-import com.evol.esdemo.dao.CategoryDao;
+import com.evol.esdemo.dao.mapper.CategoryMapper;
 import com.evol.esdemo.entity.Category;
 import com.evol.esdemo.service.CategoryService;
 import com.github.pagehelper.Page;
@@ -16,24 +16,24 @@ import java.util.List;
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
-    private CategoryDao categoryDao;
+    private CategoryMapper categoryMapper;
 
     @Override
     public Page<Category> queryByPage(int pageIndex, int pageSize) {
         PageHelper.startPage(pageIndex, pageSize);
-        return categoryDao.queryByPage();
+        return categoryMapper.queryByPage();
     }
 
     @Override
     public List<Category> getCategoryList() {
-        return categoryDao.queryCategory();
+        return categoryMapper.queryCategory();
     }
 
     @Override
     public Category getCategoryById(int categoryId) {
         /*if(1 == 1)
             throw new RuntimeException(this.getClass().getName() + ":故意抛出的异常！！");*/
-        return categoryDao.findCategoryById(categoryId);
+        return categoryMapper.findCategoryById(categoryId);
     }
 
 
@@ -51,7 +51,7 @@ public class CategoryServiceImpl implements CategoryService {
         category.setCreateTime(new Date());
         category.setLastEditTime(new Date());
         try {
-            int effectedNum = categoryDao.insertCategory(category);
+            int effectedNum = categoryMapper.insertCategory(category);
             if(effectedNum == 0)
                 throw new RuntimeException("插入类别信息失败！");
             return true;
@@ -70,7 +70,7 @@ public class CategoryServiceImpl implements CategoryService {
         }
         category.setLastEditTime(new Date());
         try {
-            int effectedNum = categoryDao.updateCategory(category);
+            int effectedNum = categoryMapper.updateCategory(category);
             if(effectedNum == 0)
                 throw new RuntimeException("修改类别信息失败！");
             return true;
@@ -85,7 +85,7 @@ public class CategoryServiceImpl implements CategoryService {
         if(categoryId <= 0)
             throw  new RuntimeException("区域Id不能为空！");
         try {
-            int effectedNum = categoryDao.deleteCategory(categoryId);
+            int effectedNum = categoryMapper.deleteCategory(categoryId);
             if(effectedNum == 0)
                 throw new RuntimeException("删除类别信息失败:");
             return true;
