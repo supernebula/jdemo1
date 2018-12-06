@@ -28,18 +28,18 @@
 
 
         <!--生成Model类存放位置-->
-        <javaModelGenerator targetPackage="test.model" targetProject="\esdemo\src">
+        <javaModelGenerator targetPackage="com.evol.esdemo.entity" targetProject="../../tool/evol-esdemo-generator/src/main/java">
             <property name="enableSubPackages" value="true" />
             <property name="trimStrings" value="true" />
         </javaModelGenerator>
 
         <!--生成映射文件存放位置-->
-        <sqlMapGenerator targetPackage="test.xml"  targetProject="\MBGTestProject\src">
+        <sqlMapGenerator targetPackage="com.evol.esdemo.dao.mapper"  targetProject="..../../tool/evol-esdemo-generator/src/main/resources">
             <property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
         <!--生成Dao类存放位置-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="test.dao"  targetProject="\MBGTestProject\src">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.evol.esdemo.dao"  targetProject="../../tool/evol-esdemo-generator/src/main/java">
             <property name="enableSubPackages" value="true" />
         </javaClientGenerator>
 
