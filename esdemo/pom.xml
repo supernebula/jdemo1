@@ -12,5 +12,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>server</module>
+        <module>tool</module>
     </modules>
 </project>
