@@ -20,3 +20,5 @@ mybatis generator
 Automatically generate Dao, Model, and Mapping related files using Mybatis-Generator](https://www.cnblogs.com/smileberry/p/4145872.html)
 
 [github.com/mybatis/generator/releases](https://github.com/mybatis/generator/releases)
+
+[Using the Generated Objects](http://www.mybatis.org/generator/generatedobjects/results.html)
