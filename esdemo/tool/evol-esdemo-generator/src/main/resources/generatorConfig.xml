@@ -54,6 +54,9 @@
         <table schema="esdemo" tableName="category" >
             <generatedKey column="id" sqlStatement="MySql" identity="true" />
         </table>
+        <table schema="esdemo" tableName="user" >
+            <generatedKey column="id" sqlStatement="MySql" identity="true" />
+        </table>
 
     </context>
 </generatorConfiguration>
