@@ -13,8 +13,7 @@ import java.beans.PropertyVetoException;
 @MapperScan("com.evol.esdemo.dao")
 public class DataSourceConfiguration {
 
-    //@Value("${jdbc.driver}")
-    @Value("${jdbc.driver}")
+
     private String jdbcDriver;
     //@Value("${jdbc.url}")
     @Value("${jdbc.url}")
@@ -23,6 +22,9 @@ public class DataSourceConfiguration {
     private String jdbcUsername;
     @Value("${jdbc.password}")
     private String jdbcPassword;
+
+    //@Value("${jdbc.driver}")
+    @Value("${jdbc.driver}")
 
     @Bean(name = "dataSource")
     public ComboPooledDataSource createDataSource() throws PropertyVetoException {
