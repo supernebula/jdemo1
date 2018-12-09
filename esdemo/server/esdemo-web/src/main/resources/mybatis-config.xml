@@ -21,7 +21,6 @@
             <!--&lt;!&ndash; 设置数据库类型 Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库&ndash;&gt;-->
             <!--<property name="dialect" value="mysql"/>-->
         <!--</plugin>-->
-
         <plugin interceptor="com.github.pagehelper.PageInterceptor">
         </plugin>
 
