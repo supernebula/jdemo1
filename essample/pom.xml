@@ -13,22 +13,22 @@
     <!--</modules>-->
 
     <parent>
-        <groupId>com.essample</groupId>
+        <groupId>com.essmp</groupId>
         <artifactId>parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>parent/pom.xml</relativePath>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>essample</artifactId>
+    <artifactId>essmp</artifactId>
     <packaging>pom</packaging>
 
     <modules>
         <module>parent</module>
         <module>server</module>
         <module>common</module>
-        <module>tool</module>
         <module>base</module>
+        <module>tool</module>
     </modules>
 
 

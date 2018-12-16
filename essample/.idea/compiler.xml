@@ -6,16 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base" />
         <module name="common" />
         <module name="es-web" />
+        <module name="essmp-dao" />
+        <module name="essmp-entity" />
+        <module name="essmp-generator" />
+        <module name="essmp-model" />
+        <module name="essmp-service" />
         <module name="server" />
-        <module name="tool" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo1" target="1.8" />
+      <module name="essampledao" target="1.5" />
+      <module name="essampledomain" target="1.5" />
+      <module name="essampleservice" target="1.5" />
       <module name="parent" target="1.5" />
+      <module name="tool" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
