@@ -12,4 +12,21 @@
     <artifactId>essmp-dao</artifactId>
 
 
+    <dependencies>
+        <dependency>
+            <groupId>com.essmp</groupId>
+            <artifactId>essmp-entity</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.4.6</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+    </dependencies>
+
+
 </project>
