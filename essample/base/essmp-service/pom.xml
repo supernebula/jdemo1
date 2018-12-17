@@ -12,4 +12,26 @@
     <artifactId>essmp-service</artifactId>
 
 
+
+    <dependencies>
+        <dependency>
+            <groupId>com.essmp</groupId>
+            <artifactId>essmp-entity</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.essmp</groupId>
+            <artifactId>essmp-dao</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.1.3.RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+    </dependencies>
 </project>
