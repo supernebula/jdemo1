@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Title</title>
+    <style>
+
+    </style>
+    <link rel="stylesheet" th:href="@{/bootstrap/css/bootstrap.css}" />
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3">Category List</div>
+        <div class="col-xs-3 col-sm-3 col-md-3"><a th:href="@{create}">Create</a></div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-1 col-md-1">no</div>
+        <div class="col-xs-1 col-md-1">id</div>
+        <div class="col-xs-1 col-md-1">name</div>
+        <div class="col-xs-1 col-md-1">priority</div>
+        <div class="col-xs-2 col-md-2">create-time</div>
+        <div class="col-xs-2 col-md-2">last-edit-time</div>
+        <div class="col-xs-2 col-md-2">operate</div>
+    </div>
+    <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->
+    <div class="row" th:each="category,stat:${pageInfo.list}">
+        <div class="col-xs-1  col-md-1" th:text="${stat.index + 1}">id</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.id}">id</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.name}">name</div>
+        <div class="col-xs-1  col-md-1" th:text="${category.priority}">priority</div>
+        <div class="col-xs-2 col-md-2" th:text="${category.createTime ne null ? #dates.format(category.createTime, 'yyyy-MM-dd') : ''}">create-time</div>
+        <div class="col-xs-2 col-md-2"  th:text="${category.lastEditTime ne null ? #dates.format(category.lastEditTime, 'yyyy-MM-dd') : ''}">last-edit-time</div>
+        <div class="col-xs-2 col-md-2">
+            <a th:href="@{edit(categoryId=${category.id})}">Edit</a>
+            &nbsp;&nbsp;
+            <a th:href="@{delete(categoryId=${category.id})}">Delete</a>
+        </div>
+    </div>
+    <!--/*@thymesVar id="pageInfo" type="com.evol.esdemo.page.PageInfo<com.evol.esdemo.entity.Category>"*/-->
+    <div class="row" style="background-color:#F5F5F5;">
+        <div class="col-xs-1  col-md-1">页码：</div>
+        <div class="col-xs-1  col-md-1" th:each="pageNo : ${#numbers.sequence(1, pageInfo.pages)}">
+
+            <a th:href="@{index(page=${pageNo},pageSize=10)}" th:text="${pageNo}" th:style="${pageNo eq currentPage ? '' : 'text-decoration:underline;'}"></a>
+        </div>
+    </div>
+</div>
+<!-- 通过thymeleaf引入图片路径 -->
+<img alt="test" th:src="@{/images/time.png}" />
+<p th:text="${host}">host1</p>
+</body>
+</html>

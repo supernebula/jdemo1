@@ -1,6 +1,6 @@
 package com.essmp.service;
 
-import com.evol.esdemo.entity.User;
+import com.essmp.entity.User;
 import com.github.pagehelper.Page;
 
 import java.util.List;

@@ -33,6 +33,10 @@ spring-boot-maven-plugin
 
 
 
-issue
+idea issue
 
 [Diamond types are not supported at this language level](https://blog.csdn.net/w605283073/article/details/79980175)
+
+对src目录右键，make directory as ->sources root
+
+[IDEA不能New Package](https://blog.csdn.net/wangruoao/article/details/82996710)
