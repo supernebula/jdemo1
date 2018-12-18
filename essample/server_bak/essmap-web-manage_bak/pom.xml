@@ -9,7 +9,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
 
-    <artifactId>essmp-web</artifactId>
+    <artifactId>essmp-web-manage</artifactId>
     <!--<version>0.0.1-SNAPSHOT</version>-->
 
     <!--https://www.cnblogs.com/larryzeal/p/5799195.html#c4-2-->
