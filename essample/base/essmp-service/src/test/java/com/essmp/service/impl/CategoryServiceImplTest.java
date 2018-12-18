@@ -1,7 +1,7 @@
 package com.essmp.service.impl;
 
-import com.evol.esdemo.entity.Category;
-import com.evol.esdemo.service.CategoryService;
+import com.essmp.entity.Category;
+import com.essmp.service.CategoryService;
 import org.junit.Assert;
 import org.junit.FixMethodOrder;
 import org.junit.Test;
