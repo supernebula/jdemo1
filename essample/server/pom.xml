@@ -12,7 +12,10 @@
 
     <artifactId>essmp-server</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <!--<version>1.0-SNAPSHOT</version>-->
 
+    <modules>
+        <module>essmp-web-simple</module>
+    </modules>
 
 </project>

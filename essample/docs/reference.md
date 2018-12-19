@@ -23,6 +23,11 @@ Automatically generate Dao, Model, and Mapping related files using Mybatis-Gener
 
 [Using the Generated Objects](http://www.mybatis.org/generator/generatedobjects/results.html)
 
+
+spring boot 
+
+[Spring Boot 官方Doc （1）first use](https://www.cnblogs.com/larryzeal/p/5799195.html#c1)
+
 spring-boot-maven-plugin
 
 [Spring Boot Maven Plugin打包异常及三种解决方法](https://www.cnblogs.com/thinking-better/p/7827368.html)
