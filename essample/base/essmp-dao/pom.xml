@@ -31,6 +31,9 @@
             <version>3.4.6</version>
             <scope>compile</scope>
         </dependency>
+
+
+
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
