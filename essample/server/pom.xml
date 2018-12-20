@@ -16,6 +16,7 @@
 
     <modules>
         <module>essmp-web-simple</module>
+        <module>essmp-web-admin</module>
     </modules>
 
 </project>

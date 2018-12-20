@@ -6,14 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="common" />
-        <module name="es-web" />
         <module name="essmp-dao" />
         <module name="essmp-entity" />
         <module name="essmp-generator" />
         <module name="essmp-model" />
+        <module name="essmp-part" />
         <module name="essmp-service" />
-        <module name="server" />
+        <module name="essmp-web-admin" />
+        <module name="essmp-web-simple" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,14 +21,19 @@
       <module name="essampledao" target="1.5" />
       <module name="essampledomain" target="1.5" />
       <module name="essampleservice" target="1.5" />
+      <module name="essmp-web-manage" target="1.8" />
+      <module name="essmpwebmanage" target="1.5" />
       <module name="parent" target="1.5" />
+      <module name="server_bak" target="1.5" />
       <module name="tool" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo1" options="-parameters" />
-      <module name="es-web" options="" />
+      <module name="essmp-web-admin" options="" />
+      <module name="essmp-web-manage" options="-parameters" />
+      <module name="essmp-web-simple" options="-parameters" />
     </option>
   </component>
 </project>

@@ -19,11 +19,6 @@
             <version>${project.version}</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.essmp</groupId>
-            <artifactId>essmp-service</artifactId>
-            <version>${project.version}</version>
-        </dependency>
 
         <dependency>
             <groupId>org.mybatis</groupId>
@@ -37,7 +32,7 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper</artifactId>
-            <version>5.1.2</version>
+            <!--<version>5.1.2</version>-->
         </dependency>
 
         <dependency>

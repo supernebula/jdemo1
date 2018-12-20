@@ -1,22 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="733e5c13-b963-440f-93c4-0427583fb96b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-dao/essmp-dao.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-dao/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-domain/essmp-domain.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-domain/essmp-entity/essmp-entity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-domain/essmp-entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-domain/essmp-model/essmp-model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-domain/essmp-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-domain/pom.xml" afterDir="false" />
+    <list default="true" id="733e5c13-b963-440f-93c4-0427583fb96b" name="Default Changelist" comment="none">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/base/essmp-service/essmp-service.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/essmp-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/essmp-generator/essmp-generator.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/essmp-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/essmp-service/src/main/essmp-service.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../esdemo/docs/reference.md" beforeDir="false" afterPath="$PROJECT_DIR$/../esdemo/docs/reference.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../esdemo/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../esdemo/parent/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../esdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../esdemo/pom.xml" afterDir="false" />
@@ -24,15 +14,12 @@
       <change beforePath="$PROJECT_DIR$/../esdemo/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../esdemo/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../esdemo/tool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../esdemo/tool/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/essmp-dao/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/base/essmp-dao/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/parent/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/parent/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tool/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/tool.iml" beforeDir="false" afterPath="$PROJECT_DIR$/tool/tool.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -52,6 +39,11 @@
     <ignored path="$PROJECT_DIR$/base/essmp-domain/essmp-entity/target/" />
     <ignored path="$PROJECT_DIR$/base/essmp-domain/essmp-model/target/" />
     <ignored path="$PROJECT_DIR$/tool/essmp-generator/target/" />
+    <ignored path="$PROJECT_DIR$/common/essmp-part/target/" />
+    <ignored path="$PROJECT_DIR$/server/essmp-web-manage/target/" />
+    <ignored path="$PROJECT_DIR$/server_bak/target/" />
+    <ignored path="$PROJECT_DIR$/server/essmp-web-simple/target/" />
+    <ignored path="$PROJECT_DIR$/server/essmp-web-admin/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,100 +68,154 @@
     <favorites_list name="essample" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/essmp-dao/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/essmp-domain/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/essmp-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/essmp-domain/essmp-entity/pom.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/essmp-domain/essmp-model/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/parent/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/essmp-generator/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="32" column="52" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
-              <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.3448276">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base/essmp-service/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="154">
+                  <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base/essmp-domain/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="308">
+                  <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="369">
+                  <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/essmp-web-simple/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="440">
+                  <caret line="20" column="40" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base/essmp-domain/pom.xml">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/common/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="308">
+                  <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/server/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="396">
+                  <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="568">
+                  <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base/essmp-domain/essmp-entity/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="110">
+                  <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/base/essmp-dao/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="242">
+                  <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>java.version</find>
       <find>1.5.17.RELEASE</find>
+      <find>mybatis-generator-core</find>
+      <find>jdbc</find>
+      <find>com.essmp.entity</find>
+      <find>Category</find>
+      <find>spring-boot-dependencies</find>
+      <find>&lt;artifactId&gt;spring-beans&lt;/artifactId&gt;</find>
+      <find>spring-boot-starter-web</find>
+      <find>manage</find>
+      <find>c3p0</find>
+      <find>com.github.pagehelper.PageInterceptor</find>
+      <find>github</find>
+      <find>pagehelper</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/server/essmap-web-manage</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -177,18 +223,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base/essample-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/base/essmp-domain/essmp-entity/pom.xml" />
         <option value="$PROJECT_DIR$/server/es-web/pom.xml" />
-        <option value="$PROJECT_DIR$/server/pom.xml" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/src/main/java/com/essmp/dao/mapper/custom/CustomCategoryMapper.java" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/src/main/java/com/essmp/dao/mapper/custom/CustomUserMapper.java" />
+        <option value="$PROJECT_DIR$/server/es-web/src/main/java/com/evol/esweb/handler/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/common/essmp-part/src/main/java/com/essmp/part/PageInfo.java" />
+        <option value="$PROJECT_DIR$/common/essmp-part/pom.xml" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/main/java/com/evol/essmp/service/CategoryService.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/main/java/com/evol/essmp/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/server/es-web-manage/src/main/java/com/essmp/esweb/EsWebApplication.java" />
+        <option value="$PROJECT_DIR$/server/es-web-manage/src/main/java/com/essmp/config/dao/DataSourceConfiguration.java" />
+        <option value="$PROJECT_DIR$/server/es-web-manage/src/main/java/com/essmp/config/service/TransactionManagementConfiguration.java" />
+        <option value="$PROJECT_DIR$/server/es-web-manage/src/main/java/com/essmp/manage/config/service/TransactionManagementConfiguration.java" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/src/main/resources/com/essmp/dao/mapper/custom/CustomCategoryMapper.xml" />
+        <option value="$PROJECT_DIR$/common/essmp-part/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/server/es-web-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/server_bak/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/config/dao/DataSourceConfiguration.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/config/service/TransactionManagementConfiguration.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/handler/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/src/test/java/CustomCategoryMapperTest.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/test/java/com/essmp/EsdemoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/test/java/com/essmp/EssmpServiceApplicationTests.java" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/src/test/java/com/essmp/EssmpDaoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/src/test/java/com/essmp/dao/mapper/custom/CustomCategoryMapperTest.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/UserService.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/impl/CategoryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/src/test/java/com/essmp/service/impl/CategoryServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/docs/reference.md" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/common/pom.xml" />
-        <option value="$PROJECT_DIR$/base/pom.xml" />
-        <option value="$PROJECT_DIR$/base/essmp-dao/pom.xml" />
-        <option value="$PROJECT_DIR$/tool/pom.xml" />
-        <option value="$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.properties" />
-        <option value="$PROJECT_DIR$/tool/essmp-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/controller/CategoryApiController.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-simple/src/main/java/com/essmp/web/simple/controller/OneController.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/controller/CategoryController.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/OneController.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/handler/GlobalExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/dao/SessionFactoryConfiguration.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/dao/DataSourceConfiguration.java" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/service/TransactionManagementConfiguration.java" />
         <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/base/essmp-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryApiController.java" />
+        <option value="$PROJECT_DIR$/base/essmp-service/pom.xml" />
+        <option value="$PROJECT_DIR$/server/pom.xml" />
+        <option value="$PROJECT_DIR$/base/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryController.java" />
       </list>
     </option>
   </component>
@@ -204,34 +289,28 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="essample-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="essmp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="essample-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="parent" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="essmp-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
     <option name="y" value="23" />
-    <option name="width" value="1901" />
-    <option name="height" value="1129" />
+    <option name="width" value="1920" />
+    <option name="height" value="1011" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <hideEmptyPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -248,6 +327,79 @@
             <path>
               <item name="essample" type="b2602c69:ProjectViewProjectNode" />
               <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-part" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp" type="462c0819:PsiDirectoryNode" />
+              <item name="part" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
               <item name="parent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -258,35 +410,135 @@
             <path>
               <item name="essample" type="b2602c69:ProjectViewProjectNode" />
               <item name="essample" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="essample" type="b2602c69:ProjectViewProjectNode" />
               <item name="essample" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-              <item name="essmp-generator" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="essample" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essample" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="essmp-web-simple" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544971842469" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545275672682" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.essmp" />
+      <recent name="com.essmp.dao.mapper.custom" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/tool/essmp-generator/src/main/resources" />
+      <recent name="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller" />
+      <recent name="$PROJECT_DIR$/server/essmp-web-admin/src/main/resources" />
+      <recent name="$PROJECT_DIR$/server/essmp-web-admin/src/main/resources/static" />
+      <recent name="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/handler" />
+      <recent name="$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/service" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -305,18 +557,92 @@
         </RuleState>
       </list>
     </option>
+    <option name="contentProportion" value="0.21675676" />
   </component>
-  <component name="RunManager" selected="Spring Boot.EsWebApplication">
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="demo1" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example1.demo.DemoApplication" />
+  <component name="RunManager" selected="Spring Boot.EssmpWebAdminApplication">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="test" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EsWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="es-web" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.evol.esweb.EsWebApplication" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="test" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="essmp-generator" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="mybatis-generator:generate" />
+                <option value="-e" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/tool/essmp-generator" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="EssmpWebAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="essmp-web-admin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.essmp.web.admin.EssmpWebAdminApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EssmpWebSimpleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="essmp-web-simple" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.essmp.web.simple.EssmpWebSimpleApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -340,7 +666,41 @@
       <workItem from="1544883470894" duration="325000" />
       <workItem from="1544883818966" duration="498000" />
       <workItem from="1544884345750" duration="3171000" />
-      <workItem from="1544965684706" duration="5310000" />
+      <workItem from="1544965684706" duration="5919000" />
+      <workItem from="1545029185504" duration="335000" />
+      <workItem from="1545039634101" duration="1171000" />
+      <workItem from="1545045720467" duration="976000" />
+      <workItem from="1545046724054" duration="1789000" />
+      <workItem from="1545048916988" duration="3829000" />
+      <workItem from="1545053306307" duration="2034000" />
+      <workItem from="1545096358333" duration="2684000" />
+      <workItem from="1545110418498" duration="877000" />
+      <workItem from="1545111404603" duration="330000" />
+      <workItem from="1545111752034" duration="377000" />
+      <workItem from="1545112164571" duration="982000" />
+      <workItem from="1545113433058" duration="2384000" />
+      <workItem from="1545116417483" duration="288000" />
+      <workItem from="1545116731607" duration="30000" />
+      <workItem from="1545117898127" duration="3422000" />
+      <workItem from="1545121607242" duration="1960000" />
+      <workItem from="1545126457121" duration="1451000" />
+      <workItem from="1545141517707" duration="4310000" />
+      <workItem from="1545208138310" duration="810000" />
+      <workItem from="1545208995383" duration="72000" />
+      <workItem from="1545209084049" duration="1058000" />
+      <workItem from="1545210667509" duration="449000" />
+      <workItem from="1545211984033" duration="856000" />
+      <workItem from="1545212868132" duration="540000" />
+      <workItem from="1545217382834" duration="145000" />
+      <workItem from="1545217548239" duration="3809000" />
+      <workItem from="1545221893640" duration="730000" />
+      <workItem from="1545222670841" duration="1538000" />
+      <workItem from="1545225244484" duration="7486000" />
+      <workItem from="1545271971422" duration="2104000" />
+      <workItem from="1545274119601" duration="129000" />
+      <workItem from="1545274444402" duration="223000" />
+      <workItem from="1545274687925" duration="279000" />
+      <workItem from="1545275368036" duration="270000" />
     </task>
     <task id="LOCAL-00001" summary="none">
       <created>1544888034265</created>
@@ -349,11 +709,109 @@
       <option name="project" value="LOCAL" />
       <updated>1544888034265</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="none">
+      <created>1544971918435</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1544971918435</updated>
+    </task>
+    <task id="LOCAL-00003" summary="none">
+      <created>1545051324244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545051324244</updated>
+    </task>
+    <task id="LOCAL-00004" summary="none">
+      <created>1545056546471</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1545056546472</updated>
+    </task>
+    <task id="LOCAL-00005" summary="none">
+      <created>1545110979087</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1545110979087</updated>
+    </task>
+    <task id="LOCAL-00006" summary="none">
+      <created>1545111194332</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1545111194332</updated>
+    </task>
+    <task id="LOCAL-00007" summary="none">
+      <created>1545114205605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1545114205606</updated>
+    </task>
+    <task id="LOCAL-00008" summary="none">
+      <created>1545124540267</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1545124540267</updated>
+    </task>
+    <task id="LOCAL-00009" summary="none">
+      <created>1545127119781</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1545127119781</updated>
+    </task>
+    <task id="LOCAL-00010" summary="none">
+      <created>1545127288875</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545127288875</updated>
+    </task>
+    <task id="LOCAL-00011" summary="none">
+      <created>1545143234829</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1545143234830</updated>
+    </task>
+    <task id="LOCAL-00012" summary="none">
+      <created>1545145638939</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1545145638939</updated>
+    </task>
+    <task id="LOCAL-00013" summary="none">
+      <created>1545218623594</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1545218623594</updated>
+    </task>
+    <task id="LOCAL-00014" summary="none">
+      <created>1545228119965</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1545228119965</updated>
+    </task>
+    <task id="LOCAL-00015" summary="none">
+      <created>1545230031086</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545230031087</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14541000" />
+    <option name="totallyTimeSpent" value="64877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -365,11 +823,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="23" width="1901" height="1129" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="23" width="1920" height="1011" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.77372265" visible="true" weight="0.25336203" />
-      <window_info id="Structure" order="1" sideWeight="0.22627737" side_tool="true" visible="true" weight="0.25336203" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7651715" visible="true" weight="0.30830672" />
+      <window_info id="Structure" order="1" sideWeight="0.2348285" side_tool="true" weight="0.29343066" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -378,26 +835,26 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18761063" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295838" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49931508" visible="true" weight="0.20732883" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49931508" weight="0.20732883" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49931508" weight="0.3295838" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49931508" weight="0.06855278" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006849" side_tool="true" weight="0.3295838" />
-      <window_info anchor="bottom" id="Spring" order="12" sideWeight="0.49931508" weight="0.3295838" />
+      <window_info anchor="bottom" id="Spring" order="12" sideWeight="0.49931508" weight="0.32861805" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" sideWeight="0.49931508" weight="0.3295838" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49931508" weight="0.3295838" />
-      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49931508" weight="0.3295838" />
+      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.49931508" weight="0.27638736" />
+      <window_info anchor="bottom" id="Messages" order="15" sideWeight="0.49931508" visible="true" weight="0.25353646" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" weight="0.23019943" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.20713525" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" weight="0.32967034" />
@@ -416,139 +873,293 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/demo1/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/server_bak的副本/server_bak.iml" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/EssmpWebManageApplication.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/config/dao/DataSourceConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/config/service/TransactionManagementConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/resources/static/bootstrap/js/npm.js" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/resources/templates/category/edit.html" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/resources/mybatis-config.xml" />
+    <entry file="file://$PROJECT_DIR$/base/essmp-dao/src/test/java/com/essmp/dao/mapper/custom/CustomCategoryMapperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="946">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/src/test/java/com/essmp/EssmpServiceApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/CategoryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/src/test/java/com/essmp/service/impl/CategoryServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/src/main/java/com/essmp/service/impl/CategoryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-dao/src/main/java/com/essmp/dao/mapper/custom/CustomCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-dao/src/test/java/com/essmp/EssmpDaoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server_bak的副本/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/server_bak的副本/essmap-web-manage_bak/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/server_bak的副本/essmap-web-manage_bak/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/docs/reference.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="160">
+            <caret line="30" column="24" lean-forward="true" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/handler/GlobalExceptionHandler.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/controller/CategoryApiController.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/manage/controller/CategoryController.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-manage/src/main/java/com/essmp/web/EssmpWebManageApplication.java" />
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-simple/src/main/java/com/essmp/web/simple/controller/OneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/resources/static/bootstrap/js/npm.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/test/java/com/essmp/web/admin/EssmpWebAdminApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/handler/GlobalExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/EssmpWebAdminApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/dao/DataSourceConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/OneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/dao/SessionFactoryConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1044#1045#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/config/service/TransactionManagementConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/server.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/parent/parent.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/base.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/essample-dao/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/essample-domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/essample-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/es-web/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/essmp-dao/pom.xml">
+    <entry file="file://$PROJECT_DIR$/base/essmp-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-simple/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="40" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/base/essmp-domain/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/essmp-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/essmp-domain/essmp-entity/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/essmp-domain/essmp-model/pom.xml">
+    <entry file="file://$PROJECT_DIR$/base/essmp-domain/essmp-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/essmp-dao/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
-          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+          <caret line="11" column="38" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/base/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
-          <caret line="30" column="62" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/essmp-generator/src/main/resources/generatorConfig.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="68" selection-start-line="23" selection-start-column="68" selection-end-line="23" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/essmp-generator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="32" column="52" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="52" />
+        <state relative-caret-position="396">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/parent/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="68" lean-forward="true" selection-start-line="13" selection-start-column="68" selection-end-line="13" selection-end-column="68" />
+        <state relative-caret-position="418">
+          <caret line="19" column="68" lean-forward="true" selection-start-line="19" selection-start-column="68" selection-end-line="19" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/essmp-web-admin/src/main/java/com/essmp/web/admin/controller/CategoryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -604,7 +1215,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>base</last-edited>
+          <last-edited>tool</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -617,7 +1228,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <last-edited>Maven: com.github.jsqlparser:jsqlparser:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

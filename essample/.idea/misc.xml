@@ -6,6 +6,9 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/server/es-web/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-simple/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-admin/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -14,6 +17,7 @@
         <option value="$PROJECT_DIR$/base/essample-domain/pom.xml" />
         <option value="$PROJECT_DIR$/base/essample-service/pom.xml" />
         <option value="$PROJECT_DIR$/parent/pom.xml" />
+        <option value="$PROJECT_DIR$/server/essmp-web-manage/pom.xml" />
         <option value="$PROJECT_DIR$/tool/pom.xml" />
       </set>
     </option>
