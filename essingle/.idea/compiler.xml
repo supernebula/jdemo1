@@ -6,8 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="essingle" />
+        <module name="essg-common" />
+        <module name="essg-dao" />
+        <module name="essg-db-generator" />
+        <module name="essg-domain" />
+        <module name="essg-service" />
+        <module name="essg-web-manage" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="essg" target="1.5" />
+      <module name="essgdo-main" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

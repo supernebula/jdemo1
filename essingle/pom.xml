@@ -4,9 +4,25 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>es.single</groupId>
-    <artifactId>single</artifactId>
+    <groupId>com.essingle</groupId>
+    <artifactId>essingle</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <mybatis-generator.version>1.3.5</mybatis-generator.version>
+        <mysql.version>5.1.47</mysql.version>
+    </properties>
+
+    <modules>
+
+        <module>essg-dao</module>
+        <module>essg-domain</module>
+        <module>essg-service</module>
+        <module>essg-common</module>
+        <module>essg-db-generator</module>
+    </modules>
 
 
 </project>
