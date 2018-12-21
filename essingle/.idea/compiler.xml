@@ -11,12 +11,13 @@
         <module name="essg-db-generator" />
         <module name="essg-domain" />
         <module name="essg-service" />
+        <module name="essg-web-manage" />
         <module name="essg-web-sample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="essg" target="1.5" />
-      <module name="essg-web-manage" target="1.8" />
+      <module name="essg-web-mange" target="1.8" />
       <module name="essgdo-main" target="1.5" />
     </bytecodeTargetLevel>
   </component>
