@@ -48,3 +48,27 @@ idea issue
 
 [ Information:java: javacTask: 源发行版 1.8 需要目标发行版 1.8](https://www.cnblogs.com/wormday/p/8424855.html)
 
+Spring Configuration Check
+Unmapped Spring configuration files found
+Please configure Spring facet or use 'Create Default Context' to add one including all unmapped files;
+[Show help in idea site](https://www.jetbrains.com/help/idea/2018.3/spring-support.html?utm_content=2018.3&utm_medium=link&utm_source=product&utm_campaign=IU#spring-file-set)
+
+
+dao层常见问题
+
+Description:
+
+Field customCategoryMapper in com.essg.service.impl.CategoryServiceImpl required a bean of type 'com.essg.dao.mapper.custom.CustomCategoryMapper' that could not be found.
+
+Action:
+Consider defining a bean of type 'com.essg.dao.mapper.custom.CustomCategoryMapper' in your configuration.
+
+[Consider defining a bean of type xxxxMapper in your configuration](https://blog.csdn.net/weixin_39651964/article/details/80249763)
+
+
+mapper需要加注解,
+
+1.在启动类加上注解
+@MapperScan(value = "com.demo.mapper")
+
+2.若不是原生配置,可以在启动类上加上@MapperScan注解,但并不是最正确的.最理想的是在MyBatis的配置文件上加

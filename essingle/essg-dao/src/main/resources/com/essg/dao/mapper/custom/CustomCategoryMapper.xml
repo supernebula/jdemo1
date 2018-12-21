@@ -4,32 +4,32 @@
 
 
 
-    <select id="queryByPage" resultType="com.evol.esdemo.entity.Category">
+    <select id="queryByPage" resultType="com.essg.entity.Category">
         SELECT category_id, category_name, priority, create_time, last_edit_time
         FROM category
         ORDER BY priority
         DESC
     </select>
 
-    <select id="queryCategory" resultType="com.evol.esdemo.entity.Category">
+    <select id="queryCategory" resultType="com.essg.entity.Category">
         SELECT category_id, category_name, priority, create_time, last_edit_time
         FROM category
         ORDER BY priority
         DESC
     </select>
     
-    <select id="findCategoryById" resultType="com.evol.esdemo.entity.Category">
+    <select id="findCategoryById" resultType="com.essg.entity.Category">
         SELECT category_id, category_name, priority, create_time, last_edit_time
         FROM category
         WHERE category_id=#{categoryId}
     </select>
-    <insert id="insertCategory" useGeneratedKeys="true" keyProperty="cagegoryId" keyColumn="category_id" parameterType="com.evol.esdemo.entity.Category">
+    <insert id="insertCategory" useGeneratedKeys="true" keyProperty="cagegoryId" keyColumn="category_id" parameterType="com.essg.entity.Category">
         INSERT INTO
         category(category_name, priority, create_time, last_edit_time)
         VALUES
         (#{categoryName},#{priority},#{createTime},#{lastEditTime})
     </insert>
-    <update id="updateCategory" parameterType="com.evol.esdemo.entity.Category">
+    <update id="updateCategory" parameterType="com.essg.entity.Category">
         update category
         <set>
             <if test="categoryName!=null">category_name=#{categoryName},</if>
