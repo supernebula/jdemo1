@@ -12,6 +12,7 @@
         <module name="essg-domain" />
         <module name="essg-service" />
         <module name="essg-web-manage" />
+        <module name="essg-web-sample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

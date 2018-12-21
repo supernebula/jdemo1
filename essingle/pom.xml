@@ -22,6 +22,8 @@
         <module>essg-service</module>
         <module>essg-common</module>
         <module>essg-db-generator</module>
+        <module>essg-web-manage</module>
+        <module>essg-web-sample</module>
     </modules>
 
 
