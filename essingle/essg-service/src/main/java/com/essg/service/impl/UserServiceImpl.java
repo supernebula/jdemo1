@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    @Autowired
+    @Autowired //属性注入
     private CustomUserMapper customUserMapper;
 
     @Override

@@ -72,3 +72,18 @@ mapper需要加注解,
 @MapperScan(value = "com.demo.mapper")
 
 2.若不是原生配置,可以在启动类上加上@MapperScan注解,但并不是最正确的.最理想的是在MyBatis的配置文件上加
+
+
+#mvn 相关
+
+1. 在执行 mvn package 之前要先执行"mvn clean package" 命令， -e 打印错误堆栈信息；
+
+2. mvn clean package -e
+
+错误：ould not resolve dependencies for project
+
+原因，mysql数据库未启动；
+
+[Could not resolve dependencies for project](https://blog.csdn.net/u010758410/article/details/79453628)
+
+[Error. Maven: The packaging for this project did not assign a file to the build artifact](https://stackoverflow.com/questions/6308162/maven-the-packaging-for-this-project-did-not-assign-a-file-to-the-build-artifac)

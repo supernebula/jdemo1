@@ -15,8 +15,14 @@ import java.util.List;
 @Service
 public class CategoryServiceImpl implements CategoryService {
 
-    @Autowired
+
     private CustomCategoryMapper customCategoryMapper;
+
+    @Autowired //构造函数注入，只有一个构造函数时，@Autowired可省略
+    public  CategoryServiceImpl(CustomCategoryMapper customCategoryMapper){
+        this.customCategoryMapper = customCategoryMapper;
+
+    }
 
     @Override
     public Page<Category> queryByPage(int pageIndex, int pageSize) {

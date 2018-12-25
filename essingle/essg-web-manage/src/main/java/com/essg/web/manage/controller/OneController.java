@@ -6,8 +6,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class OneController {
+
     @RequestMapping(value = "/one", method = RequestMethod.GET)
-    public String hello(){
+    public String one(){
         return "Hello One";
+    }
+
+    @RequestMapping(value = "/tow", method = RequestMethod.GET)
+    public String tow() throws Exception{
+        if(true)
+            throw new Exception("test exception");
+        return "tow";
     }
 }
