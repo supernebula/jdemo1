@@ -41,6 +41,22 @@ spring-boot-maven-plugin
 1. [ 关于SpringBoot bean无法注入的问题（与文件包位置有关）](https://blog.csdn.net/gefangshuai/article/details/50328451)
  
  @SpringBootApplication(scanBasePackages = {"com.essg.service", "com.essg.service.impl"})
+ 
+ 2.
+ 
+ 2.1 [Whitelabel Error Page. This application has no explicit mapping for /error. status=404](https://www.oschina.net/question/221449_2233996)
+ 
+ Whitelabel Error Page
+ 
+ This application has no explicit mapping for /error, so you are seeing this as a fallback.
+ 
+ Thu Dec 27 13:42:54 CST 2018
+ There was an unexpected error (type=Not Found, status=404).
+ No message available
+ 
+ 2.2 [Spring Boot自定义错误页面，Whitelabel Error Page处理方式](https://my.oschina.net/dabird/blog/593643)
+ 
+ 2.3 [springboot 初级错误](https://www.oschina.net/question/221449_2233996)
 
 
 

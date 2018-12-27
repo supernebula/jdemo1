@@ -43,11 +43,11 @@
         </dependency>
 
         <!--Developer tools spring boot document url https://docs.spring.io/spring-boot/docs/1.5.18.RELEASE/reference/htmlsingle/#using-boot-devtools-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework.boot</groupId>-->
+            <!--<artifactId>spring-boot-devtools</artifactId>-->
+            <!--<optional>true</optional>-->
+        <!--</dependency>-->
 
     </dependencies>
 

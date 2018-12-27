@@ -5,7 +5,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class OneController {
+public class HomeController {
+
+    @RequestMapping(value = "/")
+    public String index(){
+        return "Hello Home";
+    }
 
     @RequestMapping(value = "/one", method = RequestMethod.GET)
     public String one(){
