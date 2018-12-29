@@ -54,9 +54,38 @@ spring-boot-maven-plugin
  There was an unexpected error (type=Not Found, status=404).
  No message available
  
+ 2.1.OK 
+ 
+ [Whitelabel Error Page【springcloud-访问接口会员访问时，报错】](https://blog.csdn.net/czbkhhh/article/details/81353219)
+ 
+ 报错原因：
+ 
+ 没有在，APP.class类里面注入，controller类
+ 
+ 解决方法：
+ 
+ 以下仅供参考
+ 
+ 如图所示，在app.class类里面，加入controller包即可;
+ 
+ ``` java
+ 
+ @SpringBootApplication(scanBasePackages = {"com.essg.service", "com.essg.service.impl"})
+ @MapperScan({"com.essg.dao.mapper.custom","com.essg.dao.mapper"})
+ @ComponentScan(basePackages = {"com.essg.web.manage.controller"})  //  解决此问题，Whitelabel Error Page .This application has no explicit mapping for /error, so you are seeing this as a fallback.
+ public class EssgWebManageApplication {
+ 
+ }
+ 
+ ```
+ 
+ 
+ 
  2.2 [Spring Boot自定义错误页面，Whitelabel Error Page处理方式](https://my.oschina.net/dabird/blog/593643)
  
  2.3 [springboot 初级错误](https://www.oschina.net/question/221449_2233996)
+ 
+ 2.4 [https://blog.csdn.net/fansili/article/details/78880257]()
 
 
 
