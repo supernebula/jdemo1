@@ -75,6 +75,8 @@ spring-boot-maven-plugin
  @ComponentScan(basePackages = {"com.essg.web.manage.controller"})  //  解决此问题，Whitelabel Error Page .This application has no explicit mapping for /error, so you are seeing this as a fallback.
  public class EssgWebManageApplication {
  
+ 
+ 
  }
  
  ```
