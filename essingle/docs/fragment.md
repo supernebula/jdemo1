@@ -36,6 +36,8 @@ spring-boot-maven-plugin
 
 [利用MAVEN打包时，如何包含更多的资源文件](http://www.programgo.com/article/49183320532/)
 
+[@SpringBootApplication(用法)（@ComponentScan扫描包问题）](https://blog.csdn.net/FangX_u/article/details/82455587)
+
 ## issue
 
 1. [ 关于SpringBoot bean无法注入的问题（与文件包位置有关）](https://blog.csdn.net/gefangshuai/article/details/50328451)
