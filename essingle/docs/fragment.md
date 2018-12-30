@@ -39,6 +39,8 @@ spring-boot-maven-plugin
 ## issue
 
 1. [ 关于SpringBoot bean无法注入的问题（与文件包位置有关）](https://blog.csdn.net/gefangshuai/article/details/50328451)
+
+1.1 [SpringBoot扫描不到依赖项目的类](https://blog.csdn.net/runner1920/article/details/79076506)
  
  @SpringBootApplication(scanBasePackages = {"com.essg.service", "com.essg.service.impl"})
  
