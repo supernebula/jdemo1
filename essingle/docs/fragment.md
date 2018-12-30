@@ -64,10 +64,11 @@ spring-boot-maven-plugin
 
 1. @ComponentScan或 @SpringBootApplication的basePackages 仅仅指定了不分包，但是没有在APP.class类里面注入，controller类
 
- 注意：
- @ComponentScan
- @SpringBootApplication
-添加注解后,spring将只扫描注解配置的包，不再自动扫描启动类所在包及子包下的文件；
+注意：
+@ComponentScan
+@SpringBootApplication
+
+添加注解后,spring将只扫描注解配置的包，不再自动扫描启动类所在包及子包下的文件；例如：  @ComponentScan(basePackages= {“com.yyy.bbb”,”com.yyy.ccc”})
 
  不推荐的解决方法：
  
