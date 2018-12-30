@@ -5,44 +5,44 @@
 
 
     <select id="queryByPage" resultType="com.essg.entity.Category">
-        SELECT category_id, category_name, priority, create_time, last_edit_time
+        SELECT id, name, priority, create_time, last_edit_time
         FROM category
         ORDER BY priority
         DESC
     </select>
 
     <select id="queryCategory" resultType="com.essg.entity.Category">
-        SELECT category_id, category_name, priority, create_time, last_edit_time
+        SELECT id, name, priority, create_time, last_edit_time
         FROM category
         ORDER BY priority
         DESC
     </select>
     
     <select id="findCategoryById" resultType="com.essg.entity.Category">
-        SELECT category_id, category_name, priority, create_time, last_edit_time
+        SELECT id, name, priority, create_time, last_edit_time
         FROM category
-        WHERE category_id=#{categoryId}
+        WHERE id=#{categoryId}
     </select>
-    <insert id="insertCategory" useGeneratedKeys="true" keyProperty="cagegoryId" keyColumn="category_id" parameterType="com.essg.entity.Category">
+    <insert id="insertCategory" useGeneratedKeys="true" keyProperty="cagegoryId" keyColumn="id" parameterType="com.essg.entity.Category">
         INSERT INTO
-        category(category_name, priority, create_time, last_edit_time)
+        category(name, priority, create_time, last_edit_time)
         VALUES
         (#{categoryName},#{priority},#{createTime},#{lastEditTime})
     </insert>
     <update id="updateCategory" parameterType="com.essg.entity.Category">
         update category
         <set>
-            <if test="categoryName!=null">category_name=#{categoryName},</if>
+            <if test="categoryName!=null">name=#{categoryName},</if>
             <if test="priority!=null">priority=#{priority},</if>
             <if test="createTime!=null">create_time=#{createTime},</if>
             <if test="lastEditTime!=null">last_edit_time=#{lastEditTime},</if>
         </set>
-        where category_id=#{categoryId}
+        where id=#{categoryId}
     </update>
     <delete id="deleteCategory">
         DELETE FROM
         category
         where
-        category_id=#{categoryId}
+        id=#{categoryId}
     </delete>
 </mapper>

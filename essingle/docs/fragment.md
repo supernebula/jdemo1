@@ -60,9 +60,16 @@ spring-boot-maven-plugin
  
  报错原因：
  
- 没有在，APP.class类里面注入，controller类
- 
- 解决方法：
+
+
+1. @ComponentScan或 @SpringBootApplication的basePackages 仅仅指定了不分包，但是没有在APP.class类里面注入，controller类
+
+ 注意：
+ @ComponentScan
+ @SpringBootApplication
+添加注解后,spring将只扫描注解配置的包，不再自动扫描启动类所在包及子包下的文件；
+
+ 不推荐的解决方法：
  
  以下仅供参考
  
@@ -70,16 +77,16 @@ spring-boot-maven-plugin
  
  ``` java
  
- @SpringBootApplication(scanBasePackages = {"com.essg.service", "com.essg.service.impl"})
+ @SpringBootApplication(scanBasePackages = {"com.essg.service", "com.essg.service.impl"}) //添加注解后,spring将只扫描注解配置的包，不再自动扫描启动类所在包及子包下的文件
  @MapperScan({"com.essg.dao.mapper.custom","com.essg.dao.mapper"})
- @ComponentScan(basePackages = {"com.essg.web.manage.controller"})  //  解决此问题，Whitelabel Error Page .This application has no explicit mapping for /error, so you are seeing this as a fallback.
+ @ComponentScan(basePackages = {"com.essg.web.manage.controller"})  //  要想spring自动扫描所有包，两种方式：1. 不指定任何包；2.注册项目中所有的包！！所有的！（强烈部不推荐）@ 解决此问题，Whitelabel Error Page .This application has no explicit mapping for /error, so you are seeing this as a fallback.
  public class EssgWebManageApplication {
- 
- 
  
  }
  
  ```
+ 
+ 
  
  
  
