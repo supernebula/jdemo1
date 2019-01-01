@@ -211,3 +211,21 @@ web-manage 没有添加 dao层依赖，需要在pom.xml 添加如下：
 [Could not resolve dependencies for project](https://blog.csdn.net/u010758410/article/details/79453628)
 
 [Error. Maven: The packaging for this project did not assign a file to the build artifact](https://stackoverflow.com/questions/6308162/maven-the-packaging-for-this-project-did-not-assign-a-file-to-the-build-artifac)
+
+
+# 登录相关
+
+1. Spring boot 简单登录 
+[Spring Boot - Interceptor 拦截器](https://www.tutorialspoint.com/spring_boot/spring_boot_interceptor.htm)
+
+[springboot 拦截器实现登录验证](https://www.jianshu.com/p/4a0d2891de1d)
+
+[搭建SpringBoot（五）使用拦截器验证用户登录](https://jacksmiththu.github.io/2017/06/26/Eclipse%E6%90%AD%E5%BB%BASpringBoot%EF%BC%88%E4%BA%94%EF%BC%89%E4%BD%BF%E7%94%A8%E6%8B%A6%E6%88%AA%E5%99%A8%E9%AA%8C%E8%AF%81%E7%94%A8%E6%88%B7%E7%99%BB%E5%BD%95/)
+
+[详述 Spring MVC 框架中拦截器 Interceptor 的使用方法](https://blog.csdn.net/qq_35246620/article/details/68487904)
+
+[springboot用HandlerInterceptor实现登录失效拦截等](https://blog.csdn.net/u011919791/article/details/79814786)
+
+[SpringBoot安全登录验证](https://blog.csdn.net/qq_17505335/article/details/79145919)
+
+[Spring Boot 实现用户登陆并限制同一用户只在一个地方登陆](https://blog.csdn.net/fanxb92/article/details/80986290)

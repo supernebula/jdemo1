@@ -21,6 +21,11 @@ public class HomeController {
         return "home/index";
     }
 
+    @RequestMapping({"/error", "error"})
+    public String error(){
+        return "shared/error";
+    }
+
 
 
 
