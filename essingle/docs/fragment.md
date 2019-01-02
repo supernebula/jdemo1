@@ -229,3 +229,7 @@ web-manage 没有添加 dao层依赖，需要在pom.xml 添加如下：
 [SpringBoot安全登录验证](https://blog.csdn.net/qq_17505335/article/details/79145919)
 
 [Spring Boot 实现用户登陆并限制同一用户只在一个地方登陆](https://blog.csdn.net/fanxb92/article/details/80986290)
+
+2. Spring boot & Redis 登录
+
+[SpringBoot简单实现SpringAop+Redis+cookie单点登录+用户登录检测](https://blog.csdn.net/qq_38553333/article/details/81077162)

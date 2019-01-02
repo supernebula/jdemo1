@@ -39,6 +39,10 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 
+        //禁用登录验证，允许访问所有页面
+        if(true)
+            return true;
+
         String uri = request.getRequestURI();
         if(isExclude(uri))
             return true;
