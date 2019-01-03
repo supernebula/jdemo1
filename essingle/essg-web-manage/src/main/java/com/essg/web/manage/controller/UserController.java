@@ -1,12 +1,16 @@
 package com.essg.web.manage.controller;
 
+import com.essg.entity.User;
+import com.essg.service.UserService;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageInfo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  *
@@ -15,6 +19,9 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @Controller
 public class UserController {
+
+    @Autowired
+    private UserService userService;
 
     @RequestMapping({"/login"})
     public String login(){
@@ -28,9 +35,17 @@ public class UserController {
      * @param pageSize
      * @return
      */
-    @RequestMapping(value = "/user/index", method = RequestMethod.GET)
-    public String index(@RequestParam("pageIndex") Integer pageIndex, @RequestParam("pageSize") Integer pageSize){
+    @GetMapping(value = "/user/index")
+    //等价于 @RequestMapping(value = "/user/index", method = RequestMethod.GET)
+    public String index(Model model, @RequestParam("pageIndex") Integer pageIndex, @RequestParam("pageSize") Integer pageSize){
 
+        if(pageIndex == null)
+            pageIndex = 1;
+        if(pageSize == null)
+            pageSize = 10;
+        Page<User> page =  userService.queryByPage(pageIndex, pageSize);
+        PageInfo<User> paged = new PageInfo<>(page);
+        model.addAttribute("userPaged",paged);
         return "user/index";
     }
 
@@ -41,8 +56,9 @@ public class UserController {
      * @return
      */
     @RequestMapping(value = "/user/list/{number}", method = RequestMethod.GET)
-    public String list(@PathVariable("number") Integer number){
-
+    public String list(Model model, @PathVariable("number") Integer number){
+        List<User> list = userService.getUserList();
+        model.addAttribute("userList", list);
         return "user/index";
     }
 
@@ -50,22 +66,22 @@ public class UserController {
 
     /**
      * 创建视图
-     * @param map
+     * @param model
      * @return
      */
     @RequestMapping(value = "/user/create", method = RequestMethod.GET)
-    public String create(ModelMap map){
-
+    public String create(Model model){
+        model.addAttribute("user", new User());
         return "user/create";
     }
 
     /**
      * 提交创建
-     * @param map
+     * @param model
      * @return
      */
     @RequestMapping(value = "/user/create", method = RequestMethod.POST)
-    public String createPost(ModelMap map){
+    public String createPost(Model model){
 
         return "user/create";
     }

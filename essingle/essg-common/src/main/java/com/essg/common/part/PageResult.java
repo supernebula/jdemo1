@@ -28,27 +28,37 @@ public class PageResult<T>  implements Serializable {
     public PageResult() {
     }
 
+    public PageResult(Page page)
+    {
+        if(page == null)
+            throw new NullPointerException("page");
+        this.pageNum = page.getPageNum();
+        this.pageSize = page.getPageSize();
+
+        this.pages= page.getPages();
+        this.list = page;
+        this.total = page.getTotal();
+    }
+
+
     public PageResult(List<T> list) {
-        if (list instanceof Page) {
-            Page page = (Page) list;
-            this.pageNum = page.getPageNum();
-            this.pageSize = page.getPageSize();
+        this.pageSize = list.size();
 
-            this.pages= page.getPages();
-            this.list = page;
-            this.total = page.getTotal();
-        } else if (list instanceof Collection) {
-            this.pageNum = 1;
-            this.pageSize = list.size();
+        this.pageNum = 1;
+        this.list = list;
+        this.total = list.size();
+        //判断页面边界
+        judgePageBoudary();
+    }
 
-            this.pageNum = 1;
-            this.list = list;
-            this.total = list.size();
-        }
-        if (list instanceof Collection) {
-            //判断页面边界
-            judgePageBoudary();
-        }
+    public PageResult(List<T> list, int pageNum, int pageSize, int total) {
+        this.pageSize = pageSize;
+
+        this.pageNum = pageNum;
+        this.list = list;
+        this.total = total;
+        //判断页面边界
+        judgePageBoudary();
     }
 
     /**
