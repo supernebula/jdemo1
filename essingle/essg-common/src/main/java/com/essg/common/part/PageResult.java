@@ -28,7 +28,7 @@ public class PageResult<T>  implements Serializable {
     public PageResult() {
     }
 
-    public PageResult(Page page)
+    public PageResult(Page<T> page)
     {
         if(page == null)
             throw new NullPointerException("page");

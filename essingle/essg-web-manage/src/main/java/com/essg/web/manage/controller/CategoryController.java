@@ -28,9 +28,9 @@ public class CategoryController {
         if(page == null || page < 1) page = 1;
         if(pageSize == null || pageSize < 10) pageSize = 10;
 
-        Page<Category> items = categoryService.queryByPage(page, pageSize);
+        Page<Category> paged = categoryService.queryByPage(page, pageSize);
         // 需要把Page包装成PageResult对象才能序列化。该插件也默认实现了一个PageResult
-        PageResult<Category> pageResult = new PageResult<>(items);
+        PageResult<Category> pageResult = new PageResult<Category>(paged);
         map.put("pageResult", pageResult);
 /*        if(1 == 1)
             throw new RuntimeException("故意抛出的异常！！");*/
