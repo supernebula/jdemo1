@@ -5,29 +5,29 @@
 
 
     <select id="queryByPage" resultType="com.essg.entity.User">
-        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time
+        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_login_time
         FROM user
         ORDER BY create_time
         DESC
     </select>
 
     <select id="queryUser" resultType="com.essg.entity.User">
-        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time
+        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_login_time
         FROM user
         ORDER BY create_time
         DESC
     </select>
 
     <select id="findUserById" resultType="com.essg.entity.User">
-        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time
+        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_login_time
         FROM user
         WHERE id=#{id}
     </select>
     <insert id="insertUser" useGeneratedKeys="true" keyProperty="d" keyColumn="id" parameterType="com.essg.entity.User">
         INSERT INTO
-        user(id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time)
+        user(id, username, email, password, phone, gender, address, status, balance, create_time, last_login_time)
         VALUES
-        (#{username},#{email},#{password},#{phone},#{gender},#{address},#{status},#{balance},#{createTime},#{lastEditTime})
+        (#{username},#{email},#{password},#{phone},#{gender},#{address},#{status},#{balance},#{createTime},#{lastLoginTime})
     </insert>
     <update id="updateUser" parameterType="com.essg.entity.User">
         update user
@@ -41,7 +41,7 @@
             <if test="status!=null">status=#{status},</if>
             <if test="balance!=null">balance=#{balance},</if>
             <if test="createTime!=null">create_time=#{createTime},</if>
-            <if test="lastEditTime!=null">last_edit_time=#{lastEditTime},</if>
+            <if test="lastLoginTime!=null">last_login_time=#{lastLoginTime},</if>
         </set>
         where id=#{id}
     </update>
