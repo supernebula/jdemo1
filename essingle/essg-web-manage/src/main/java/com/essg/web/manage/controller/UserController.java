@@ -37,7 +37,7 @@ public class UserController {
      */
     @GetMapping(value = "/user/index")
     //等价于 @RequestMapping(value = "/user/index", method = RequestMethod.GET)
-    public String index(Model model, @RequestParam("pageIndex") Integer pageIndex, @RequestParam("pageSize") Integer pageSize){
+    public String index(Model model, @RequestParam(value = "pageIndex", defaultValue = "1") Integer pageIndex, @RequestParam(value = "pageSize", defaultValue = "10") Integer pageSize){
 
         if(pageIndex == null)
             pageIndex = 1;
