@@ -1,5 +1,7 @@
 package com.essg.web.manage.controller;
 
+import com.essg.common.part.PageResult;
+import com.essg.entity.Category;
 import com.essg.entity.User;
 import com.essg.service.UserService;
 import com.github.pagehelper.Page;
@@ -43,9 +45,9 @@ public class UserController {
             pageIndex = 1;
         if(pageSize == null)
             pageSize = 10;
-        Page<User> page =  userService.queryByPage(pageIndex, pageSize);
-        PageInfo<User> paged = new PageInfo<>(page);
-        model.addAttribute("userPaged",paged);
+        Page<User> paged =  userService.queryByPage(pageIndex, pageSize);
+        PageResult<User> pageResult = new PageResult<User>(paged);
+        model.addAttribute("pageResult",pageResult);
         return "user/index";
     }
 

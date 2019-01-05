@@ -20,7 +20,8 @@ public class UserServiceImpl implements UserService {
     @Override
     public Page<User> queryByPage(int pageIndex, int pageSize) {
         PageHelper.startPage(pageIndex, pageSize);
-        return customUserMapper.queryByPage();
+        Page<User> page = customUserMapper.queryByPage();
+        return page;
     }
 
     @Override

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.essg.dao.mapper.custom.CustomUserMapper">
+
+
+
+    <select id="queryByPage" resultType="com.essg.entity.User">
+        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time
+        FROM user
+        ORDER BY create_time
+        DESC
+    </select>
+
+    <select id="queryUser" resultType="com.essg.entity.User">
+        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time
+        FROM user
+        ORDER BY create_time
+        DESC
+    </select>
+
+    <select id="findUserById" resultType="com.essg.entity.User">
+        SELECT id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time
+        FROM user
+        WHERE id=#{id}
+    </select>
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="d" keyColumn="id" parameterType="com.essg.entity.User">
+        INSERT INTO
+        user(id, username, email, password, phone, gender, address, status, balance, create_time, last_edit_time)
+        VALUES
+        (#{username},#{email},#{password},#{phone},#{gender},#{address},#{status},#{balance},#{createTime},#{lastEditTime})
+    </insert>
+    <update id="updateUser" parameterType="com.essg.entity.User">
+        update user
+        <set>
+            <if test="username!=null">username=#{username},</if>
+            <if test="email!=null">email=#{email},</if>
+            <if test="password!=null">password=#{password},</if>
+            <if test="phone!=null">phone=#{phone},</if>
+            <if test="gender!=null">gender=#{gender},</if>
+            <if test="address!=null">address=#{address},</if>
+            <if test="status!=null">status=#{status},</if>
+            <if test="balance!=null">balance=#{balance},</if>
+            <if test="createTime!=null">create_time=#{createTime},</if>
+            <if test="lastEditTime!=null">last_edit_time=#{lastEditTime},</if>
+        </set>
+        where id=#{id}
+    </update>
+    <delete id="deleteUser">
+        DELETE FROM
+        user
+        where
+        id=#{id}
+    </delete>
+</mapper>
