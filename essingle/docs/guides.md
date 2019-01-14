@@ -31,3 +31,8 @@ https://blog.csdn.net/ityouknow/article/details/80490926
 [Thymeleaf使用技巧：使用片段（fragment）实现母版页（Layout）功能](https://ken.io/note/thymeleaf-skill-layout)
 
 [Thymeleaf教程 （八） 模板布局（thymeleaf的主要技术优势）](https://blog.csdn.net/mygzs/article/details/52527758)
+
+#open source project
+
+[javashop-eop](https://github.com/javashop-eop/literate-guide)
+
